@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { Router } from 'react-router-dom'
-import { Route } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 
 import Landing from '../Landing';
 import Aadmin from '../Admin';
@@ -112,39 +112,41 @@ function Rounting() {
   };
 
   return (
-    <div>
-      <Route exact path="/" component={Landing}></Route>
+    <HashRouter basename="/">
+      <div>
+        <Route exact path="/" component={Landing}></Route>
 
-      {/* Password-page */}
-      <Route path="/adminpage">
-        <Aadmin Adfuc={inputval} a={inputvalue} />
-      </Route>
-      {/* StudentRollNumber */}
+        {/* Password-page */}
+        <Route path="/adminpage">
+          <Aadmin Adfuc={inputval} a={inputvalue} />
+        </Route>
+        {/* StudentRollNumber */}
 
-      <Route path="/NameId">
-        <NameId
-          stN={StudentRollNumber}
-          stN2={StudentRollNumber2}
-          BntAlrt={BtnClick}
-        />
-      </Route>
-      {/* Record */}
-      <Route path="/Record">
-        <Record
-          eng={inpt1}
-          urd={inpt2}
-          math={inpt3}
-          pak={inpt4}
-          com={inpt5}
-          b={save}
-        />
-      </Route>
+        <Route path="/NameId">
+          <NameId
+            stN={StudentRollNumber}
+            stN2={StudentRollNumber2}
+            BntAlrt={BtnClick}
+          />
+        </Route>
+        {/* Record */}
+        <Route path="/Record">
+          <Record
+            eng={inpt1}
+            urd={inpt2}
+            math={inpt3}
+            pak={inpt4}
+            com={inpt5}
+            b={save}
+          />
+        </Route>
 
-      <Route path="/CheckRuslt">
-        <CheckRuslt chec={EnterVal} ba={btn} />
-      </Route>
-      <Route path="/ShowData" component={ShowData}></Route>
-    </div>
+        <Route path="/CheckRuslt">
+          <CheckRuslt chec={EnterVal} ba={btn} />
+        </Route>
+        <Route path="/ShowData" component={ShowData}></Route>
+      </div>
+    </HashRouter>
   );
 }
 
