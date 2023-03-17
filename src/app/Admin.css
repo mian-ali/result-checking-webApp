@@ -1,0 +1,79 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+.Pasword
+{
+height: 100vh;
+width: 100%;
+/* background-color: #a491f7; */
+background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('pas.jpg');
+background-size: cover;
+}
+.password-h1
+{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top:180px;
+}
+#pas-input
+{
+    height: 07vh;
+    width: 30%;
+    text-align: center;
+    font-size: 23px;
+    border-radius: 20px;
+    margin-left: 33%;
+    margin-top:30px;
+    outline:none;
+    box-shadow: 3px 4px 4px 10px red;
+}
+#pas-input:hover
+{
+    box-shadow: 3px 4px 4px 10px orange;
+
+}
+#Record
+{
+    height: 60px;
+    width: 170px;
+    border-radius: 30px;
+    background: orange;
+    font-size: 22px;
+    outline: none;
+    border: none;
+    margin-left:40px;
+}
+#Record:hover
+{
+cursor: pointer;
+}
+
+/* ````` */
+.typewriter h1 {
+    overflow: hidden; 
+    /* border: 2px solid red; */
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    /* text-align: center; */
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .75s step-end infinite;
+      
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }

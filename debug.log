@@ -1,0 +1,6 @@
+[1202/094553.385:ERROR:settings.cc(320)] Settings magic is not 1129342067
+[1202/095553.387:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0207/025133.560:ERROR:registration_protocol_win.cc(102)] CreateFile: The system cannot find the file specified. (0x2)
+[0207/025216.038:ERROR:registration_protocol_win.cc(102)] CreateFile: The system cannot find the file specified. (0x2)
+[0207/210250.877:ERROR:registration_protocol_win.cc(102)] CreateFile: The system cannot find the file specified. (0x2)
+[0208/001640.789:ERROR:registration_protocol_win.cc(102)] CreateFile: The system cannot find the file specified. (0x2)

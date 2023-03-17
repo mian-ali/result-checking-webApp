@@ -1,0 +1,78 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.MainPage
+{
+    height: 100vh;
+    width: 100%;
+    /* background:red; */
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('pic2.jpg');
+    background-size:100% 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.Landing-H1
+{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top:240px;
+    /* padding: 0; */
+    animation: color-change 1.5s infinite;
+}
+@keyframes color-change {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    70%  {color: pink;}
+    90%  {color: brown;}
+    100% {color: green;}
+  }
+#AdminBtn1
+{
+   
+    height: 60px;
+    width: 170px;
+    border-radius: 30px;
+    /* background: #ccc; */
+    background: linear-gradient(100deg, rgb(182, 40, 111) 50%, #ac2066 0);
+    color:#ccc;
+
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 50px;
+    outline: none;
+    border: none;
+margin-left: 37%;}
+#AdminBtn1:hover
+{
+    cursor: pointer;
+    background: linear-gradient(100deg, #e263a2 0,rgb(182, 40, 111) 50%);
+
+}
+
+#RusltBtn1
+{
+
+    height: 60px;
+    width: 170px;
+    border-radius: 30px;
+    background: #ccc;
+    font-size: 22px;
+    font-weight:600;
+    margin-left: 10px;
+    outline:none;
+    border: none;
+    color:#ccc;
+    background: linear-gradient(100deg, rgb(182, 40, 111) 50%, #ac2066 0);
+
+}
+#RusltBtn1:hover
+{
+    cursor: pointer;
+    background: linear-gradient(100deg, #e263a2 0,rgb(182, 40, 111) 50%);
+
+}
